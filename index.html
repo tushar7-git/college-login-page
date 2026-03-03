@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMS College of Science & Commerce</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png">
+        <div>
+            <h2>CMS College of Science & Commerce</h2>
+            <p>Challenge Meets Success | Since 1988 | NAAC A++</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#events">Events</a>
+        <a href="#portal">Student Portal</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <h1>Welcome to CMS College</h1>
+    <p>Empowering Innovation & Excellence in Education</p>
+    <button onclick="scrollToSection('portal')">Student Login</button>
+</section>
+
+<!-- NAAC -->
+<section class="naac">
+    <img src="naac-gold.jpg">
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section split">
+    <div>
+        <h2>About CMS College</h2>
+        <p>
+            CMS Educational and Charitable Trust, established in 1988, is committed to
+            providing quality higher education. The college is accredited with NAAC A++ Grade
+            and offers a wide range of undergraduate and postgraduate programs in Science,
+            Commerce, Arts and Management.
+        </p>
+        <p>
+            With modern infrastructure, advanced laboratories, digital classrooms,
+            research facilities and strong industry partnerships, CMS ensures holistic
+            development of students.
+        </p>
+    </div>
+    <img src="campus-entrance.jpg">
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="section light">
+    <h2>UG & PG Programs</h2>
+
+    <div class="course-grid">
+
+        <div>
+            <h3>Science</h3>
+            <ul>
+                <li>B.Sc Computer Science</li>
+                <li>B.Sc Information Technology</li>
+                <li>B.Sc Artificial Intelligence</li>
+                <li>B.Sc Data Science</li>
+                <li>M.Sc Computer Science</li>
+                <li>M.Sc Data Analytics</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Commerce</h3>
+            <ul>
+                <li>B.Com</li>
+                <li>B.Com CA</li>
+                <li>B.Com A&F</li>
+                <li>B.Com FinTech</li>
+                <li>M.Com</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Management</h3>
+            <ul>
+                <li>BBA</li>
+                <li>BBA CA</li>
+                <li>BBA Aviation</li>
+                <li>BBA Logistics</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Arts</h3>
+            <ul>
+                <li>BA English Literature</li>
+                <li>MA English</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- LAB SECTION -->
+<section class="section split">
+    <img src="lab-banner.jpg">
+    <div>
+        <h2>Advanced Infrastructure</h2>
+        <p>
+            CMS provides well-equipped laboratories, modern computer centers,
+            library resources and digital learning facilities to ensure
+            academic excellence and innovation.
+        </p>
+    </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="section">
+    <h2>Upcoming Events</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="campus-front.jpg">
+            <h3>Web Designing Competition</h3>
+            <button onclick="showEvent('Web Designing Competition')">View Details</button>
+        </div>
+
+        <div class="card">
+            <img src="students-formal.jpg">
+            <h3>Hackathon 2026</h3>
+            <button onclick="showEvent('Hackathon 2026')">View Details</button>
+        </div>
+
+        <div class="card">
+            <img src="students-group.jpg">
+            <h3>Tech Symposium</h3>
+            <button onclick="showEvent('Tech Symposium')">View Details</button>
+        </div>
+    </div>
+</section>
+
+<!-- LOGIN -->
+<section id="portal" class="portal">
+    <div class="login-box">
+        <h2>Student Portal Login</h2>
+
+        <form onsubmit="login(event)">
+            <input type="text" id="regno" placeholder="Register Number" required>
+            <input type="text" id="dob" placeholder="Date of Birth (dd/mm/yy)" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="loginMessage"></p>
+    </div>
+</section>
+
+<!-- PARALLAX -->
+<section class="parallax"></section>
+
+<!-- CONTACT -->
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>📍 Ganapathy, Coimbatore – 641006</p>
+    <p>📞 7548898693 | 7548808693 | 9843048616</p>
+    <p>✉ info@cmscollege.edu.in</p>
+    <p>© 2026 CMS College of Science & Commerce</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
